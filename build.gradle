@@ -43,11 +43,6 @@ tasks.withType(JavaCompile) {
 }
 
 
-java {
-    toolchain {
-        languageVersion = JavaLanguageVersion.of(17)
-    }
-}
 
 tasks.withType(Test) {
     systemProperties(System.getProperties())
